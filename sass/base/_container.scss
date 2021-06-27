@@ -1,0 +1,30 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .main-header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+//Mobile 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+//Tablet 768+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+//Desktop 1200+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
