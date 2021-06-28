@@ -21,7 +21,12 @@
   .contact {
     display: none;
   }
-
+  .main-header .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
   .main-header__burger {
     display: inline-block;
     align-items: center;
@@ -54,10 +59,16 @@
   .mobile-menu {
     display: none;
   }
-  .main-header {
+  .main-header .container {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+  }
+  .main-header {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     padding-top: 21px;
     padding-bottom: 21px;
     border-bottom: 1px solid rgba(236, 236, 236, 1);
@@ -70,5 +81,11 @@
   .main-header {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+  .main-header .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }

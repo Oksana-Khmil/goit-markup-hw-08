@@ -42,7 +42,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/hero-mobile@2x.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero-mobile@2x.jpg');
     }
   }
   .hero__title {
@@ -63,7 +67,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/hero-tablet@2x.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero-tablet@2x.jpg');
     }
   }
   .hero__title {
@@ -88,7 +96,11 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero {
-      background-image: url('../images/hero/hero-desktop@2x.jpg');
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('../images/hero/hero-desktop@2x.jpg');
     }
   }
   .hero__title {

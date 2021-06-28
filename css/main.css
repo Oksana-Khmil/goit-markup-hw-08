@@ -446,13 +446,13 @@ body {
 }
 
 .webstudio {
-  display: inline-block;
+  align-items: center;
   color: #000000;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin-right: 93px;
+  margin-right: auto;
   text-decoration: none;
 }
 
@@ -460,10 +460,6 @@ body {
   .webstudio {
     font-size: 24px;
   }
-}
-
-.main-header .webstudio {
-  padding: 26px 0;
 }
 
 .web {
@@ -481,6 +477,10 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+}
+
+.navigation__list {
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
@@ -522,7 +522,7 @@ body {
   }
   .contact {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-left: auto;
   }
   .contact__item {
@@ -572,6 +572,7 @@ body {
   }
   .contact {
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-left: auto;
   }
@@ -606,8 +607,14 @@ body {
   .contact {
     display: none;
   }
-  .main-header__burger {
+  .main-header .container {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-header__burger {
+    display: inline-block;
     align-items: center;
   }
   .main-header__burger {
@@ -635,10 +642,13 @@ body {
   .mobile-menu {
     display: none;
   }
-  .main-header {
+  .main-header .container {
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+  }
+  .main-header {
     padding-top: 21px;
     padding-bottom: 21px;
     border-bottom: 1px solid #ececec;
@@ -650,6 +660,12 @@ body {
   .main-header {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+  .main-header .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -847,16 +863,6 @@ body {
   justify-content: space-between;
 }
 
-.clients__item {
-  flex-basis: calc(100% / 6 - 30px);
-  margin-left: 30px;
-}
-
-.clients__item:first-child {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .clients__link {
   padding: 16px 32px;
   display: flex;
@@ -881,6 +887,46 @@ body {
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .clients__item {
+    flex-basis: calc((100% - 60px) / 2);
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .clients__item {
+    flex-basis: calc((100% - 90px) / 3);
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .clients__item {
+    justify-content: space-between;
+  }
 }
 
 .team__card {
@@ -972,7 +1018,7 @@ body {
 
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile@2x.jpg");
   }
 }
 
@@ -990,7 +1036,7 @@ body {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 
@@ -1012,7 +1058,7 @@ body {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero-desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
   }
 }
 
@@ -1158,6 +1204,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .footer__container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
