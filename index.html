@@ -191,7 +191,7 @@
 
 
         <!-- <ACTIVITIES> -->
-        <section class="section">
+        <section class="section section--activities">
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="activities">
@@ -236,61 +236,158 @@
                 </ul>
             </div>
         </section>
+
+
+
+
+
+
+        
         <!-- <TEAM> -->
-        <section class="section section__background--team">
-            <div class="container">
-                <h2 class="section__title">Наша команда</h2>
-                <ul class="team">
-                    <li class="team__item">
-                        <img src="./images/team/ihor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-                        <div class="team__card">
-                            <h3 class="team__member">Игорь Демьяненко</h3>
-                            <p class="team__description" lang="en">Product Designer</p>
-                            <ul class="social-icons list">
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+<section class="section section__background--team">
+    <div class="container">
+        <h2 class="section__title">Наша команда</h2>
+        <ul class="team">
+            <li class="team__item">
+            <picture>
+            <source
+                srcset="
+                ./images/team/igor.jpg    1x,
+                ./images/team/igor@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                ./images/team/igor_tablet.jpg    1x,
+                ./images/team/igor_tablet@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                ./images/team/igor_mobile.jpg    1x,
+                ./images/team/igor_mobile@2x.jpg 2x"
+                  media="(max-width: 768px)"
+                />
+                <img
+                  src="./images/team/igor.jpg"
+                  alt="Ihor Demyanenko photo"
+                />
+                </picture>
+                <div class="team__card">
+                <h3 class="team__member">Игорь Демьяненко</h3>
+                <p class="team__description" lang="en">Product Designer</p>
+                <ul class="social-icons list">
+                <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                 <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                   </a>
+            </li>
+            <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+                </a>
+                </li>
+            <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                 <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+                </li>
+                </ul>
+                </div>
+                </li>
+            <li class="team__item">
+                <picture>
+                <source srcset="
+                ./images/team/olga.jpg    1x,
+                ./images/team/olga@2x.jpg 2x
+                " media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/team/olga_tablet.jpg    1x,
+                ./images/team/olga_tablet@2x.jpg 2x
+                " media="(min-width: 768px)" />
+                <source srcset="
+                ./images/team/olga_mobile.jpg    1x,
+                ./images/team/olga_mobile@2x.jpg 2x
+                " media="(max-width: 768px)" />
+                <img src="./images/team/olga.jpg" alt="Ольга Репина" />
+                </picture>
+<!--<img src="./images/team/olha.jpg" alt="Ольга Репина" width="270" height="260" /> -->
+                <div class="team__card">
+                <h3 class="team__member">Ольга Репина</h3>
+                <p class="team__description" lang="en">Frontend Developer</p>
+                <ul class="social-icons list">
+                <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+                </a>
+            </li>
+            <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+                </a>
+                </li>
+                <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+                </a>
+                </li>
+                <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+                </a>
+            </li>
+        </ul>
+        </div>
 
-                    </li>
-                    <li class="team__item">
-                        <img src="./images/team/olha.jpg" alt="Ольга Репина" width="270" height="260" />
-                        <div class="team__card">
-                            <h3 class="team__member">Ольга Репина</h3>
-                            <p class="team__description" lang="en">Frontend Developer</p>
-                            <ul class="social-icons list">
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
+            </li>
+            <li class="team__item">
+                <picture>
+                <source srcset="
+                ./images/team/nikolay.jpg    1x, ./images/team/nikolay@2x.jpg 2x
+                " 
+                media="(min-width: 1200px)" />
+                <source srcset="
+                ./images/team/nikolay_tablet.jpg  1x, ./images/team nikolay_tablet@2x.jpg 2x" 
+                media="(min-width: 768px)" />
+                <source srcset="
+                ./images/team/nikolay_mobile.jpg    1x,
+                ./images/team/nikolay_mobile@2x.jpg 2x
+                " 
+                media="(max-width: 768px)" />
+                <img src="./images/team/olga.jpg" alt="Николай Тарасов" />
+                </picture>
+<!-- <img src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" /> -->
+        <div class="team__card">
+                <h3 class="team__member">Николай Тарасов</h3>
+                <p class="team__description" lang="en">Marketing</p>
+                <ul class="social-icons list">
+                <li class="social-icon-item">
+                <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
+                <svg class="social-icon" width="20px" height="20px">
+                <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+                </a>
                                 </li>
                                 <li class="social-icon-item">
                                     <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
@@ -313,49 +410,27 @@
                                         </svg>
                                     </a>
                                 </li>
-                            </ul>
-                        </div>
+            </ul>
+            </div>
+            </li>
+            <li class="team__item">
+                    <picture>
+                                            <source srcset="
+                                                            ./images/team/michail.jpg    1x,
+                                                            ./images/team/michail@2x.jpg 2x
+                                                          " media="(min-width: 1200px)" />
+                                            <source srcset="
+                                                            ./images/team/michail_tablet.jpg    1x,
+                                                            ./images/team/michail_tablet@2x.jpg 2x
+                                                          " media="(min-width: 768px)" />
+                                            <source srcset="
+                                                            ./images/team/michail_mobile.jpg    1x,
+                                                            ./images/team/nikolay_mobile@2x.jpg 2x
+                                                          " media="(max-width: 768px)" />
+                                            <img src="./images/team/olga.jpg" alt="Николай Тарасов" />
+                                            </picture>
 
-                    </li>
-                    <li class="team__item">
-                        <img src="./images/team/nikolay.jpg" alt="Николай Тарасов" width="270" height="260" />
-                        <div class="team__card">
-                            <h3 class="team__member">Николай Тарасов</h3>
-                            <p class="team__description" lang="en">Marketing</p>
-                            <ul class="social-icons list">
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-icon-item">
-                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer">
-                                        <svg class="social-icon" width="20px" height="20px">
-                                            <use href="./images/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="team__item">
-                        <img src="./images/team/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                        <!-- <img src="./images/team/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260" /> -->
                         <div class="team__card">
                             <h3 class="team__member">Михаил Ермаков</h3>
                             <p class="team__description" lang="en">UI Designer</p>
@@ -392,8 +467,8 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section>
+    </div>
+</section>
         <!-- <Постоянные клиенты> -->
         <section class="section section__clients">
                             <h2 class="section__title">Постоянные клиенты</h2>
@@ -452,13 +527,13 @@
         <div class="container footer__container ">
             <div class="footer-contact">
 
-                <a href="" lang="en" class="webstudio">
-                    Web<span class="web"></span>Studio</span></a>
+                <a href="" lang="en" class="footer-webstudio">
+                    <span class="web">Web</span>Studio</a>
                     
                 <address class="address-box">
 
                 <ul class="address-box__list">
-                    <li class="address-boxt__item">
+                    <li class="address-box__item">
                         <a class="address-box__map-link" href="https://goo.gl/maps/7oAF3nw1k7qhsK217" target="_blank"
                             rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
