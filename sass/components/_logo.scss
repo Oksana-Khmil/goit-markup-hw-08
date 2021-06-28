@@ -1,23 +1,27 @@
 .webstudio {
+  display: inline-block;
   color: #000000;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   margin-right: 93px;
+  text-decoration: none;
+  @media screen and (max-width: 1199px) {
+    font-size: 24px;
+  }
 }
-
+.main-header .webstudio {
+  padding: 26px 0;
+}
 .web {
   color: var(--accent-color);
 }
 
-.footer-webstudio {
-  display: block;
+.footer .web {
   color: var(--primary-white-color);
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  margin-right: 70px;
+}
+
+.footer-webstudio {
+  margin-bottom: 20px;
 }

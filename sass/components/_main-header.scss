@@ -17,26 +17,33 @@
   .navigation__list {
     display: none;
   }
+
   .contact {
     display: none;
   }
 
   .main-header__burger {
-    display: flex;
+    display: inline-block;
     align-items: center;
+  }
+
+  .main-header__burger {
     background-color: transparent;
     border: none;
     padding: 0;
     cursor: pointer;
-    &:hover {
-      fill: var(--accent-color);
-      outline: none;
-    }
+    // &:hover {
+    //   fill: var(--accent-color);
+    outline: none;
+    // }
   }
-  .main-header__icon {
-    width: 40px;
-    height: 40px;
-  }
+}
+.main-header__icon {
+  width: 40px;
+  height: 40px;
+}
+.main-header__burger:focus .main-header__icon {
+  fill: var(--accent-color);
 }
 
 //Tablet 768+

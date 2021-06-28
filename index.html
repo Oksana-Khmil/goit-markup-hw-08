@@ -27,6 +27,7 @@
         <a href="" lang="en" class="webstudio">
             <span class="web">Web</span>Studio</a>
 
+
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -40,9 +41,10 @@
                 </li>
             </ul>
         </nav>
+
         <button class="main-header__burger" type="button" data-menu-button>
             <svg class="main-header__icon">
-                <use href="./images/icons.svg#icon-envelope"></use>
+                <use href="./images/icons.svg#icon-burger"></use>
             </svg>
         </button>
 
@@ -61,52 +63,50 @@
         </ul>
         </div>
 
-
-
         <!-- MOBILE MENU -->
         <div class="mobile-menu" data-menu>
             <button type="button" class="mobile-menu__button" data-menu-close>
                 <svg class="mobile-menu__button-icon">
-                    <use href="./images/icons.svg#icon-envelope"></use>
+                    <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
         
-            <ul class="mobile-menu__list list">
+            <ul class="mobile-menu__list">
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link-current" href="./index.html">Студия</a>
+                    <a class="mobile-menu__link mobile-menu__link-current" href="./index.html">Студия</a>
                 </li>
         
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link link" href="./portfolio.html">Портфолио</a>
+                    <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
                 </li>
         
                 <li class="mobile-menu__item">
-                    <a class="mobile-menu__link link" href="">Контакты</a>
+                    <a class="mobile-menu__link" href="">Контакты</a>
                 </li>
             </ul>
         
-            <ul class="mobile-contacts__list list">
+            <ul class="mobile-contacts__list">
                 <li class="mobile-contacts__item">
-                    <a href="tel:+380961111111" class="mobile-contact__link link">+38 096 111 11 11</a>
+                    <a href="tel:+380961111111" class="mobile-contact__link">+38 096 111 11 11</a>
                 </li>
         
                 <li class="mobile-contacts__item">
-                    <a href="mailto:info@devstudio.com" class="mobile-contact__link link">info@devstudio.com</a>
+                    <a href="mailto:info@devstudio.com" class="mobile-contact__link">info@devstudio.com</a>
                 </li>
             </ul>
         
-            <ul class="mobile-social__list list">
+            <ul class="mobile-social__list">
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link link">Instagram</a>
+                    <a href="" class="mobile-social__link">Instagram</a>
                 </li>
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link link">Twitter</a>
+                    <a href="" class="mobile-social__link">Twitter</a>
                 </li>
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link link">Facebook</a>
+                    <a href="" class="mobile-social__link">Facebook</a>
                 </li>
                 <li class="mobile-social__item">
-                    <a href="" class="mobile-social__link link">LinkedIn</a>
+                    <a href="" class="mobile-social__link">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -128,11 +128,12 @@
         <!-- <Особенности Features> -->
         <section class="section section__features">
             <div class="container">
-                <h2 class="section__subtitle section__subtitle--visually-hidden">Особенности</h2>
+                <h2 class="section__title visually-hidden">Особенности</h2>
                 <ul class="features">
                     <li class="features__item">
                         <div class="features__thumb">
-                            <svg width="70px" height="70px">
+                            <svg class="features__icon"
+                            width="70px" height="70px">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
@@ -143,7 +144,7 @@
                     </li>
                     <li class="features__item">
                         <div class="features__thumb">
-                            <svg width="70px" height="70px">
+                            <svg class="features__icon" width="70px" height="70px">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
@@ -153,7 +154,8 @@
                     </li>
                     <li class="features__item">
                         <div class="features__thumb">
-                            <svg width="70px" height="70px">
+                            <svg class="features__icon"
+                            width="70px" height="70px">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
@@ -164,7 +166,8 @@
                     </li>
                     <li class="features__item">
                         <div class="features__thumb">
-                            <svg width="70px" height="70px">
+                            <svg class="features__icon"
+                            width="70px" height="70px">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
@@ -190,7 +193,7 @@
         <!-- <ACTIVITIES> -->
         <section class="section">
             <div class="container">
-                <h2 class="section__subtitle">Чем мы занимаемся</h2>
+                <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="activities">
 
                     <li class="activities__item">
@@ -236,7 +239,7 @@
         <!-- <TEAM> -->
         <section class="section section__background--team">
             <div class="container">
-                <h2 class="section__subtitle">Наша команда</h2>
+                <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
                         <img src="./images/team/ihor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
@@ -394,7 +397,7 @@
         <!-- <Постоянные клиенты> -->
         <section class="section section__background">
             <div class="container">
-                <h2 class="section__subtitle">Постоянные клиенты</h2>
+                <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="clients">
                     <li class="clients__item">
                         <a class="clients__link" href="">
@@ -449,22 +452,24 @@
         <div class="container footer__container ">
             <div class="footer-contact">
 
-                <a href="" lang="en" class="footer-webstudio">
-                    <span class="web">Web</span>Studio</a>
+                <a href="" lang="en" class="webstudio">
+                    Web<span class="web"></span>Studio</span></a>
+                    
+                <address class="address-box">
 
-
-                <ul class="footer-contact__list">
-                    <li class="footer-contact__item">
-                        <a class="footer-contact__map-link" href="https://goo.gl/maps/7oAF3nw1k7qhsK217" target="_blank"
+                <ul class="address-box__list">
+                    <li class="address-boxt__item">
+                        <a class="address-box__map-link" href="https://goo.gl/maps/7oAF3nw1k7qhsK217" target="_blank"
                             rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                     </li>
-                    <li class="footer-contact__item">
-                        <a class="footer-contact__link" href="maito:info@devstudio.com">info@example.com</a>
+                    <li class="address-box__item">
+                        <a class="address-box__link" href="maito:info@devstudio.com">info@example.com</a>
                     </li>
-                    <li class="footer-contact__item">
-                        <a class="footer-contact__link" href="tel:380961111111">+38 099 111 11 11</a>
+                    <li class="address-box__item">
+                        <a class="address-box__link" href="tel:380961111111">+38 099 111 11 11</a>
                     </li>
                 </ul>
+                </address>
             </div>
 
             <div class="footer-social">
