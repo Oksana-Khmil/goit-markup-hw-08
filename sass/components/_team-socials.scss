@@ -1,13 +1,13 @@
-.social-icons {
+.social-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-icon-item:not(:last-child) {
+.social-icon__item:not(:last-child) {
   margin-right: 10px;
 }
-.social-link {
+.social-icon__link {
   padding: 12px;
   display: flex;
   align-items: center;
@@ -25,8 +25,8 @@
   fill: var(--icons-color);
   transition: fill 250ms var(--cubic);
 
-  .social-link:hover &,
-  .social-link:focus & {
+  .social-icon__link:hover &,
+  .social-icon__link:focus & {
     fill: var(--primary-white-color);
   }
 }
